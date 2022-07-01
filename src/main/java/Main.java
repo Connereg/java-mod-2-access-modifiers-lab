@@ -10,10 +10,13 @@ public class Main {
         Car car2 = new Car("Pinto", "Blue", 4, 120);
         Car car3 = new Car("SAAB", "Black", 4, 180);
         Car car4 = new Car("Angel's Car", "Blue", 4, 100);
+
         while (true) {
             System.out.println("Would you like to add a car to the garage? \n 1. Add Car \n 2. Remove Car \n 3. List Cars \n 4. Set car");
             String userInput = scanner.nextLine();
             int input = getInput(userInput);
+
+            // car1.carColor = "Magenta";  THIS WILL NOT WORK BECAUSE CAR COLOR IS NOT VISIBLE OUTSIDE OF CAR CLASS/ NEEDS METHOD TO REASSIGN
 
             switch (input) {
                 case 1:
